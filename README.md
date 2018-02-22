@@ -32,8 +32,8 @@ This tutorial will guide you through the process of creating and texturing a 3D 
 The workflow will be as follows: we'll find a picture of the side profile of the vehicle, trace this picture in Fusion to create a solid model, then apply graphics to that model in Blender.
 
 We'll be using the following tools:
-- Fusion 360 (v2.0.3803) - computer aided design software (autodesk.com/products/fusion-360)
-- Blender (v2.79) - computer graphics software (blender.org)
+- Fusion 360 (v2.0.3803) - computer aided design software ([autodesk.com/products/fusion-360](http://autodesk.com/products/fusion-360))
+- Blender (v2.79) - computer graphics software ([blender.org](http://blender.org))
 
 ## Making the model in Fusion
 
