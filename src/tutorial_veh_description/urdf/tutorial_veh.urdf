@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="prius">
+
+  <link name="base_link">
+    <inertial>
+      <mass value="1"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="base_link_connection" type="fixed">
+    <parent link="base_link"/>
+    <child link="chassis"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+  </joint>
+
+  <link name="chassis">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://tutorial_veh_description/meshes/body.obj" scale="1 1 1"/>
+      </geometry>
+    </visual>
+
+    <collision name="chassis">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://tutorial_veh_description/meshes/body.obj" scale="1 1 1"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="1e3"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e3" ixy="0.0" ixz="0.0" iyy="1e3" iyz="0.0" izz="1e3"/>
+    </inertial>
+  </link>
+</robot>
